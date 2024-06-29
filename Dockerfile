@@ -3,9 +3,10 @@ FROM node:20 as build
 WORKDIR /app
 
 COPY package*.json ./
-COPY .env.frontend ./
 
 RUN npm install
+
+COPY .env ./
 
 COPY . .
 
