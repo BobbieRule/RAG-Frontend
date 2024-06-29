@@ -6,13 +6,13 @@
 
 ## Setup Instructions
 
-1. Install Dependencies:
+### 1. Install Dependencies:
 
    ```bash
    npm i
    ```
 
-2. Configure Environment:
+### 2. Configure Environment:
 
    ```bash
    cp .env.example .env
@@ -20,7 +20,7 @@
 
    Add values for the environment keys in the .env file.
 
-3. Run the Server:
+### 3. Run the Server:
 
    ```bash
    npm run dev
