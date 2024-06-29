@@ -3,11 +3,9 @@ FROM node:20 as build
 WORKDIR /app
 
 COPY package*.json ./
+COPY .env.frontend ./
 
 RUN npm install
-
-ARG VITE_API_BASE_URL
-ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 
 COPY . .
 
